@@ -1,0 +1,19 @@
+.banner {
+  height: 120px;
+  width: 100%;
+  background-color: $teal;
+  background-image: url("../images/champagne.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 3px solid $teal;
+  display: flex;
+
+  .bannerAd {
+    margin: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}

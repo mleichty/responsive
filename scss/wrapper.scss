@@ -1,0 +1,278 @@
+.contentWrapper {
+  padding: 0 100px;
+  //background-color: yellow;
+  height: auto;
+
+  .header {
+    border-bottom: 1px solid $lightGray;
+    display: flex;
+    //background-color: pink;
+    align-items: center;
+    padding: 20px 0;
+
+    .logo {
+      margin: auto;
+      //background-color: orange;
+      display: flex;
+
+        img {
+          margin: auto;
+          height: 100%;
+          width: 50%;
+          //background-color: red;
+        }
+    }
+
+    .support {
+      position: absolute;
+      right: 110px;
+      //background-color: orange;
+
+      h3 {
+        font-style: italic;
+      }
+      
+      a {
+        text-decoration: none;
+
+        p {
+          text-align: center;
+          background-color: orange;
+          padding: 10px;
+          color: white;
+
+          &:hover {
+            background-color: darkorange;
+          }
+        }
+      }
+    }
+  }
+
+  .splitScreen {
+    display: flex;
+
+    .leftSide {
+      width: 70%;
+      //background-color: sandybrown;
+
+      .featurePost {
+        img {
+          width: 100%;
+          height: auto;
+          padding: 15px 0;
+        }
+
+        h6 .bylineLinks {
+          font-weight: bold;
+
+          a {
+            text-decoration: none;
+            color: $teal;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        h1 .titleLinks {
+          font-weight: bold;
+
+          a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+              text-decoration: underline;
+              color: $teal;
+            }
+          }
+        }
+      }
+
+      .blogPost {
+        display: flex;
+        min-height: auto;
+        //background-color: green;
+        //max-height: 400px;
+        padding-top: 15px;
+
+        .postText {
+          width: 70%;
+          border-top: 1px solid $lightGray;
+          padding-top: 15px;
+          padding-right: 10px;
+
+          h6 .bylineLinks {
+            font-weight: bold;
+
+            a {
+              text-decoration: none;
+              color: $teal;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+
+          h3 .titleLinks {
+            font-weight: bold;
+
+            a {
+              text-decoration: none;
+              color: black;
+
+              &:hover {
+                text-decoration: underline;
+                color: $teal;
+              }
+            }
+          }
+        }
+
+        .postImage {
+          width: 30%;
+          //max-width: 300px;
+          //max-height: 300px;
+          //overflow: hidden;
+          //max-width: 100%;
+          //min-width: 100%;
+          //background-image: url("../images/goblin-market.jpg");
+          //background-size: contain;
+          //background-repeat: no-repeat;
+
+          img {
+            width: 100%;
+            //max-height:300px;
+            //max-width:300px;
+            //height:auto;
+            //width:auto;
+            //height: 100%;
+            //overflow: hidden;
+            //max-height: 200px;
+            //max-width: 200px;
+            //height: auto;
+            //padding: 0 15px;
+          }
+        }
+      }
+
+      .moreBy {
+
+        .dash {
+          width: 20px;
+          height: 2px;
+          background-color: black;
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+
+        h5 .titleLinks {
+          font-weight: bold;
+
+          a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+              text-decoration: underline;
+              color: $teal;
+            }
+          }
+        }
+
+        .postBlurbs {
+          //background-color: red;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .postBlurb {
+            width: 22%;
+            //padding: 10px;
+            img {
+              width: 100%;
+              //height: 100px;
+            }
+          }
+        }
+      }
+    }
+
+    .rightSide {
+      width: 30%;
+      //background-color: brown;
+
+      .ads {
+        display: flex;
+        flex-direction: column;
+
+          img {
+            margin: auto;
+            padding: 20px;
+          }
+      }
+    }
+  }
+
+  .table {
+    border-top: 1px solid black;
+    //max-width: 90%;
+
+    tr {
+      //width: 100%;
+
+      td {
+        padding: 8px;
+        font-weight: bold;
+
+        a {
+          text-decoration: none;
+          color: black;
+
+          &:hover {
+            text-decoration: underline;
+            color: $teal;
+          }
+        }
+
+        img {
+          border: 1px solid $lightGray;
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .contentWrapper {
+    padding: 0 20px;
+
+    .splitScreen {
+      .leftSide {
+        width: 100%;
+        padding-right: 20px;
+      }
+
+      .rightSide {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+
+  .contentWrapper {
+
+    .header {
+      .support {
+        display: none;
+      }
+    }
+  }
+}
